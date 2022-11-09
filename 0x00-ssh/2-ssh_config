@@ -1,0 +1,3 @@
+PasswordAuthentication No
+StrictHostKeyChecking No
+IdentityFile ~/.ssh/school
