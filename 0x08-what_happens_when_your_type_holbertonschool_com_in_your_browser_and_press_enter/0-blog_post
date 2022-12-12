@@ -1,0 +1,36 @@
+What happens when you https://www.holbertonschool. in your browser and
+m sure all have typed information into a browser and thought to How does this all  Well, today I will be explaining and walking you through the riveting journey of how requests and responses travel through the internet. Let's get started.
+
+Client server model
+s take a look at the client server model to better understand it before diving into the details of the web infrastructure. The client server model is a distributed application structure that partitions task or workload between the providers of a resource or service, called servers, and service requesters called clients. When the client computer sends a request for data to the server through the internet, the server accepts the requested process and delivers the data packets requested back to the client.
+
+DNS request
+When you type in the URL [https://holbertonschool.com into our browser and , the first thing that the browser is going to consider is the www.holbertonschool.com part first, which is the domain name. If the browser  know that domain name, it's going to ask the Domain name system (DNS) for the IP address corresponding to this particular domain name. The IP address is in fact the unique address of the main server hosting the website www.holbertonschool.com.
+
+The DNS request first goes through the resolver. The resolver is usually the internet service provider, and if it doesnt find the IP in its cache, it will request the root server. The root server knows where the top level domain server is. In this case, the top-level domain is the .com. If the TLD server t know the IP, it will point the resolver to the authoritative name servers for the domain name. But any of those name servers can give the IP for the domain name they are attached to. The resolver now has the IP address and can send it back to the browser which will perform its request to the corresponding server.
+
+TCP/IP
+Internet protocol  is commonly referred to as TCP/IP, and it also contains other types of protocols. s a set of rules that define how servers and clients interact over the network, and how data should be transferred, broken into packets, received, etc.
+
+Firewall
+Servers are often equipped with firewalls in order to protect themselves from hackers and cyber attacks. A firewall is a software that sets rules about what can enter or leave a part of a network. In the case of our example, when the browser asks for the website at the IP address, that request has to be processed by a firewall which will decide if s friend or foe. The browser can also be equipped with a firewall to detect if the IP given by the DNS request is a potential malicious agent.
+
+HTTPS/SSL
+Now that the browser has the IP address, it is going to take care of the other part of the URL, the https:// part. HTTPS stands for hypertext transfer protocol secure, and is a secure version of the regular HTTP. This transfer protocol defines different types of requests and responses served to clients and servers over a network. In other terms, its the main way to transfer data between a browser and a website. HTTP and HTTPS requests include GET, POST, PUT, and others. The HTTPS requests and responses are encrypted, which ensure the users that their data t be stolen or used by a third-party.
+
+Another key component of securing websites is the SSL certificate. SSL stands for secure sockets layer. The certificate needs to be issued from a trusted certificate authority, like sEncry.pt for example, which gives free SSL certificates. When a website has this certificate, re able to see a little lock icon next to the website name in the search bar. On some browsers and with certain types of SSL certificates, the bar will turn green.
+
+Load balancer
+Like I mentioned earlier, websites live on servers. For most websites where the traffic is consequent, it would be impossible to be hosted on a single server. Plus, it would create a single point of failure, because it would only need one attack on said server to take the whole site down. As needs for higher availability and security rises, websites started augmenting the number of servers they have, organizing them in clusters, and using load balancers. A load balancer is a software program that distributes network requests between several servers, following a load balancing algorithm.
+
+Web server
+Once the requests have been evenly distributed to the servers, they will be processed by one or more web servers. A web server is a software program that serves static content, like simple HTML pages, images or plain text files. The web server is responsible for finding where the static content corresponding to the address asked for is living, and for serving it as an HTTP, or HTTPS response.
+
+Application server
+Having a web server is the basis of any web page. Most sites t just want a static page where no interaction is happening, and most websites are dynamic. That means that it is possible to interact with the site, save information into it, log in with username and a password. This is made possible by the use of one or more application servers. These are software programs responsible for operating applications, communicating with databases and managing user information. They work behind webs servers and will be able to serve a dynamic application using the static content from the web server.
+
+Database
+The last layer in our web infrastructure is the Database management system (DBMS). A database is a collection of data, and the DBMS is the program that is going to interact with the database and retrieve, add, modify data in it.
+
+There are several types of database models. The two main ones are relational databases, and non-relational databases. A relational database can be seen as a collection of tables representing objects, where each column is an attribute and each row is an instance of that object. We can perform SQL queries in those databases. A non relational database can have many forms, as the data inserted in it t have to follow a particular schema.
+ 
